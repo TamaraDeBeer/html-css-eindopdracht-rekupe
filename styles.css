@@ -1,3 +1,19 @@
+:root {
+    --purple-color:#5722CD;
+    --light-purple-color:#F2F0FF;
+    /*(voor de grote zwevende woorden, zoals "hello" en "services")*/
+    --blue-color:#4845E4;
+    --pink-color:#ED4385;
+    --black-color:#0C0C0C;
+    /*(voor standaard tekst)*/
+    --grey-color:#7A7A7A;
+    /*(voor de service-tegel tekst)*/
+    --light-grey-color:#F3F6F9;
+    /*(voor de achtergrond van de projecten)*/
+    --font-normal: 'Roboto', sans-serif;
+    --font-headings: 'Merriweather', serif;
+}
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -13,6 +29,12 @@
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
