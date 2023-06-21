@@ -24,7 +24,7 @@
     4. Areas
         4.1 Header
         4.2 Introduction
-        etc.
+        4.3
     5. Media Queries
 ////////////////////////*/
 
@@ -38,6 +38,17 @@
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
+h1 {
+    font-family: var(--font-headings);
+    font-size: 40px;
+}
+
+body {
+    font-family: var(--font-normal);
+    font-weight: 250;
+    font-size: 25px;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
@@ -47,7 +58,68 @@
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+/*.header {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    border: 2px dotted red;*/
+/*}*/
+
+header {
+    background-color: var(--blue-color);
+    color: white;
+    position: relative;
+    /*padding: 30px;*/
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 30px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-basis: 500px;
+}
 
 /* --------------- 4.2 Introduction ------------------- */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-content: space-between;
+    padding: 100px 250px;
+    gap: 30px;
+    height: 500px;
+}
+
+button {
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--pink-color);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 12px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 360px;
+    width: 27%;
+}
+
+.squiggle_line {
+    position: absolute;
+    margin: 300px 0px 0px 460px;
+
+}
+
+/* --------------- 4.3  ------------------------- */
+
+/* --------------- 4.4  ------------------------- */
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
