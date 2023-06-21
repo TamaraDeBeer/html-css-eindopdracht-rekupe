@@ -13,14 +13,15 @@
 <header class="header">
     <nav class="navigation">
         <ul>
-            <li>Case Studies</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
     <div class="introduction">
         <h1>Your website is an investment in the success of your business.</h1>
         <p>We are here to help you succeed.</p>
+<!--        Ik ben er nog niet achter hoe ik de button laat doorverwijzen naar #contact-->
         <button type="button">Let's work together</button>
         <img src="assets/squiggle_line_stripe.svg" class="squiggle-line" alt="Squiggle Line Stripe">
     </div>
@@ -31,10 +32,10 @@
         <h2>Rekupe is a digital agency in Los Angeles.</h2>
         <h2>We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.</h2>
         <h2>We see every project as a fresh opportunity, pushing ourselves to create digital new experiences.</h2>
-        <p class="question">Have a question? Click here to contact us!</p>
+        <p class="question">Have a question? <a href="#contact">Click here</a> here to contact us!</p>
     </div>
 
-    <section>
+    <section id="case-studies">
         <div class="projects">
             <h3>Rolling Stone</h3>
             <img class="squiggle-line2" src="assets/squiggle_line.svg" alt="Squiggle line">
@@ -70,7 +71,7 @@
         </span>
     </section>
 
-    <div class="services">
+    <div class="services" id="services">
     <article>
         <img class="icon" src="assets/icon_web-design.svg" alt="web design">
         <h4>Web Design</h4>
@@ -108,7 +109,27 @@
     </article>
     </div>
 
+    <div class="contact" id="contact">
+        <h1>Let's work together</h1>
+        <p>Have a question? Need a quote? Let us know!</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" id="name"/>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email"/>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="10" cols="50" placeholder="Message"></textarea>
+
+            <button class="send" type="button">Send</button>
+        </form>
+    </div>
 </main>
+
+<footer>
+    <p>Business website opdracht © NOVI Hogeschool 2023</p>
+</footer>
 
 </body>
 </html>
